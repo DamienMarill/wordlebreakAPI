@@ -12,6 +12,8 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function testGetRoute(){
-        return "yousk2";
+        return [
+            'message' => 'yousk2'
+        ];
     }
 }
